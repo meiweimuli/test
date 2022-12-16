@@ -1,0 +1,10 @@
+mixed-port: 7890
+allow-lan: true
+mode: global
+log-level: info
+external-controller: "0.0.0.0:9090"
+proxies:
+  - name: "charles"
+    type: http
+    server: 10.10.13.183
+    port: 8888
